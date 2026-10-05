@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melina Chhetri — Content Creator & Digital Marketing</title>
+  <meta name="description" content="Portfolio of Melina Chhetri, BIT student and content creator in Pokhara, Nepal. Social media content, short-form videos, and designs that grow audiences." />
+  <meta property="og:title" content="Melina Chhetri — Content Creator & Digital Marketing" />
+  <meta property="og:description" content="I create engaging social content, short-form videos, and designs that grow audiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="top">
+  <div class="nav-inner container">
+    <a href="#hero" class="logo">Melina<span>.</span></a>
+    <nav id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">🌙</button>
+      <button id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero container">
+    <div class="hero-text">
+      <p class="eyebrow">👋 Hello, I'm</p>
+      <h1>Melina Chhetri</h1>
+      <p class="tagline">BIT Student • Content Creator • Digital Marketing</p>
+      <p class="intro">I create engaging social content, short-form videos, and designs that grow audiences.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#work" class="btn btn-ghost">View My Work</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/images/profile.jpg" alt="Portrait of Melina Chhetri" loading="eager" onerror="this.src='https://placehold.co/600x700/f7d9dc/5b2a4a?text=Melina'" />
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p class="about-text reveal">
+      I'm a creative and motivated third-year BIT student at Informatics College Pokhara with a passion for content creation, social media, and digital marketing. I love crafting engaging content, designing eye-catching graphics, and editing short-form videos. Right now I'm looking for a part-time opportunity where I can apply my creativity, learn industry practices, and bring fresh ideas to a content-focused team.
+    </p>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section container">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li class="reveal">
+        <h3>Content Creator</h3>
+        <p class="meta">Sky Base Innovation</p>
+        <ul>
+          <li>Created engaging content for Instagram, Facebook, and TikTok</li>
+          <li>Edited short-form videos in CapCut to boost engagement and reach</li>
+        </ul>
+      </li>
+      <li class="reveal">
+        <h3>Content Creator</h3>
+        <p class="meta">Niti Academy</p>
+        <ul>
+          <li>Researched trending topics and content strategies aligned with digital marketing goals</li>
+          <li>Collaborated with the team on content calendars and campaign ideas</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-card reveal">
+        <h3>🎨 Creative</h3>
+        <div class="chips">
+          <span class="chip">Content Creation</span><span class="chip">Canva Designing</span>
+          <span class="chip">Video Editing (CapCut)</span><span class="chip">Copywriting & Content Writing</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>📈 Marketing</h3>
+        <div class="chips">
+          <span class="chip">Social Media Management</span><span class="chip">Trend Research</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>🤝 Soft Skills</h3>
+        <div class="chips">
+          <span class="chip">Communication</span><span class="chip">Team Collaboration</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>🛠️ Tools</h3>
+        <div class="chips">
+          <span class="chip">Canva</span><span class="chip">CapCut</span><span class="chip">Instagram</span>
+          <span class="chip">Facebook</span><span class="chip">TikTok</span><span class="chip">ChatGPT</span>
+          <span class="chip">Google Docs</span><span class="chip">MS Office</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work" class="section container">
+    <h2>Projects / Portfolio</h2>
+    <div class="filters" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="posts">Posts</button>
+      <button class="filter-btn" data-filter="videos">Videos</button>
+      <button class="filter-btn" data-filter="posters">Posters</button>
+      <button class="filter-btn" data-filter="presentations">Presentations</button>
+    </div>
+    <div id="workGrid" class="work-grid"></div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section container">
+    <h2>Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <h3>Bachelor in Information Technology (BIT)</h3>
+        <p class="meta">Informatics College Pokhara</p>
+        <p>3rd Year (Ongoing)</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3>+2 Higher Secondary Education</h3>
+        <p class="meta">Sagarmatha College</p>
+        <p>Completed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LANGUAGES ============ -->
+  <section id="languages" class="section container">
+    <h2>Languages</h2>
+    <div class="lang-grid">
+      <div class="lang reveal"><span>Nepali <em>Fluent</em></span><div class="meter"><i style="width:100%"></i></div></div>
+      <div class="lang reveal"><span>English <em>Good Working Proficiency</em></span><div class="meter"><i style="width:85%"></i></div></div>
+      <div class="lang reveal"><span>Hindi <em>Conversational</em></span><div class="meter"><i style="width:60%"></i></div></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <form id="contactForm" class="reveal" novalidate>
+        <label>Name<input type="text" name="name" required autocomplete="name" /></label>
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+      <div class="contact-info reveal">
+        <p>📍 Pokhara-17, Chhorepatan, Nepal</p>
+        <p>✉️ <a href="mailto:xterimelina98@gmail.com">xterimelina98@gmail.com</a></p>
+        <p>📞 <a href="tel:+9779826126970">9826126970</a></p>
+        <div class="socials">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+        </div>
+        <a class="btn btn-ghost" href="assets/cv.pdf" download>⬇ Download CV</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Melina Chhetri · Made with care in Pokhara, Nepal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
